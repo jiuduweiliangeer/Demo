@@ -19,5 +19,6 @@ public class ListDemo {
         System.out.println(list.indexOf("a3"));
         list.remove(1);
         System.out.println(list);
+        System.out.println("1");
     }
 }

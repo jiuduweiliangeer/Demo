@@ -12,7 +12,7 @@ public class ComparaToSortOverrideDemo {
         list.add(new Name("John","o"));
         list.add(new Name("Tom","M"));
         System.out.println(list);
-        Collections.sort(list);
+        Collections.sort(list);//如果不重写comparaTo方法，则无法判断Name中数据的类型，无法进行比较，程序会出现错误
         System.out.println(list);
     }
 }

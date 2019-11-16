@@ -36,7 +36,9 @@ public class Name implements Comparable{
     }//因为用equals需要比很多次,重写equals方法一定要重写hashCode方法
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Object o) {/*如果this==o 则返回值为0
+                                      如果this>o  则返回值为1
+                                      如果this<o  则返回值为-1*/
         Name n=(Name)o;
         int lashCap=
                 lastName.compareTo(n.lastName);

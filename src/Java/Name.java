@@ -37,8 +37,8 @@ public class Name implements Comparable{
 
     @Override
     public int compareTo(Object o) {/*如果this==o 则返回值为0
-                                      如果this>o  则返回值为1
-                                      如果this<o  则返回值为-1*/
+                                      如果this>o  则返回值大于0
+                                      如果this<o  则返回值小于0*/
         Name n=(Name)o;
         int lashCap=
                 lastName.compareTo(n.lastName);

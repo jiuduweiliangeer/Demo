@@ -1,6 +1,6 @@
 package Java;
 
-public class Name {
+public class Name implements Comparable{
     private String firstName,lastName;
     public Name(String firstName,String lastName){
         this.firstName=firstName;
@@ -33,5 +33,15 @@ public class Name {
     @Override
     public int hashCode() {
         return firstName.hashCode();//当这个类的某个对象被当作键的时候，也就是索引的时候调用hashcode
-    }//因为用equals需要比很多次
-}//重写equals方法一定要重写hashCode方法
+    }//因为用equals需要比很多次,重写equals方法一定要重写hashCode方法
+
+    @Override
+    public int compareTo(Object o) {
+        Name n=(Name)o;
+        int lashCap=
+                lastName.compareTo(n.lastName);
+        return
+                (lashCap!=0?lashCap:firstName.compareTo(n.firstName));
+    }//在确定数据类型时调用Collections的sort方法，需要让需要比较的类继承接口Comparable，并且重写Comparable接口中唯一的方法comparaTo，让数据类型强制转换，然后进行比较，对于一般的数据类型则不需要重写，直接使用sort进行排序即可
+}
+

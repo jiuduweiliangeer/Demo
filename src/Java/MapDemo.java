@@ -8,7 +8,7 @@ public class MapDemo {
         Map map=new HashMap();
         Map map1=new HashMap();
         map.put("one",new Integer(1));
-        map.put("two",new Integer(2));
+        map.put("two",new Integer(2));//在jdk1.5之后可以直接进行传参，会自动进行打包解包，自动将基础类型的值转换成一个对象
         map.put("three",new Integer(3));
         map1.put("A",new Integer(1));
         map1.put("B",new Integer(2));

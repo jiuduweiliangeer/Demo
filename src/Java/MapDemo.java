@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MapDemo {
-    public static void main(String []args){
+    public static void main(String []args){/*
         Map map=new HashMap();
         Map map1=new HashMap();
         map.put("one",new Integer(1));
@@ -24,6 +24,21 @@ public class MapDemo {
         m3.putAll(map1);
         map2.putAll(map1);
         System.out.println(map2);
-        System.out.println(m3);
-    }
+        System.out.println(m3);*/
+        Map<String,Integer> map=new HashMap<String, Integer>();
+        Map<String,Integer> map1=new HashMap<String, Integer>();
+        map.put("one",1);
+        map.put("two",2);
+        map.put("three",3);
+        map1.put("A",1);
+        map1.put("B",2);
+        System.out.println(map.size());
+        System.out.println(map);
+        System.out.println(map.containsValue(1));
+        System.out.println(map.containsKey("two"));
+        if(map.containsKey("two")){
+            int i=map.get("two").intValue();
+            System.out.println(i);
+        }
+    }//使用
 }

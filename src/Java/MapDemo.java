@@ -40,5 +40,5 @@ public class MapDemo {
             int i=map.get("two").intValue();
             System.out.println(i);
         }
-    }//使用
+    }//使用泛型规定数据类型，简化代码
 }

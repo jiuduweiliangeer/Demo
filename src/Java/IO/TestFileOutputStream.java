@@ -7,7 +7,7 @@ public class TestFileOutputStream {
         FileOutputStream out=null;
         try{
             in=new FileInputStream("E:\\Demo.txt");
-            out=new FileOutputStream("E:\\Demo2.txt");
+            out=new FileOutputStream("E:\\Demo2.txt");//FileOutputStream如果没有其中的路径，系统会自动创建一个文件
             while((b=in.read())!=-1){
                 out.write(b);
             }

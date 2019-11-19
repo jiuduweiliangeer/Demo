@@ -1,4 +1,4 @@
-package Java;
+package Java.Collection;
 
 public class Name implements Comparable{
     private String firstName,lastName;

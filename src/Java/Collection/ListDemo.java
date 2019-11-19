@@ -1,4 +1,4 @@
-package Java;
+package Java.Collection;
 
 import java.awt.*;
 import java.util.LinkedList;

@@ -11,12 +11,12 @@ public class TestBufferedStream {
             int c=0;
             System.out.println(bufferedInputStream.read());
             System.out.println(bufferedInputStream.read());
-            bufferedInputStream.mark(100);
+            bufferedInputStream.mark(100);//标记输入流的当前位置，readlimit表示允许在标记位置无效之前读取许多字节
             for (int i = 0; i <10 && ((c=bufferedInputStream.read())!=-1) ; i++) {
                 System.out.println(c+" ");
             }
             System.out.println();
-            bufferedInputStream.reset();
+            bufferedInputStream.reset();//将此流重新定位到上次在此输入流上调用mark的位置
             for (int i = 0; i <10 && ((c=bufferedInputStream.read())!=-1) ; i++) {
                 System.out.println(c+" ");
             }

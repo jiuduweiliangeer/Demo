@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class TestFileInputStream {
+public class TestFileInputStream {//字节流输入
     public static void main(String []args){
         int b=0;
         FileInputStream in=null;

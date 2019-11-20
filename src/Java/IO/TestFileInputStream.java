@@ -9,7 +9,7 @@ public class TestFileInputStream {
         int b=0;
         FileInputStream in=null;
         try{
-            in=new FileInputStream("E:\\Demo.txt");//在java中使用路径需要双反斜杠
+            in=new FileInputStream("E:\\Demo.txt");//在java中使用字符串表示路径需要双反斜杠
         } catch (FileNotFoundException e) {
             System.out.println("找不到当前文件");
             System.exit(-1);

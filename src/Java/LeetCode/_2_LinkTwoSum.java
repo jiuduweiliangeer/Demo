@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class _2LinkTwoSum {
+public class _2_LinkTwoSum {
     /*public class ListNode{
         int val;
         ListNode next;

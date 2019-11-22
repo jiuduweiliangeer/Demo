@@ -12,7 +12,7 @@ public class TestTransForm1 {
             outputStreamWriter.write("abcdefghijklmn");
             System.out.println(outputStreamWriter.getEncoding());
             outputStreamWriter.close();
-            String m="IBM500";
+            String m="ISO_8859_1";//字符编码，可以通过编码表进行查找
             outputStreamWriter=new OutputStreamWriter(new FileOutputStream("E:\\Demo6.txt",true),m);//true表示在当前文件已有数据的情况下，接在数据后面继续写入数据，如果不加入true，则会覆盖当前文本，造成数据丢失
             //该构造方法可以指定字符编码
             outputStreamWriter.write("abcdefghijklmn");

@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class TestFileWriter {//字符流输出
+public class TestFileWriter {//字符流输出，将数据写入到文件中
     public static void main(String []args){
         FileWriter writer=null;
         try{

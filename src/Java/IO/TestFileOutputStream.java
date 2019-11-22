@@ -1,6 +1,6 @@
 package Java.IO;
 import java.io.*;
-public class TestFileOutputStream {//字节流输出容易出现汉字读取乱码的情况
+public class TestFileOutputStream {//字节流输出容易出现汉字读取乱码的情况，将数据写入文件
     public static void main(String []args){
         int b=0;
         FileInputStream in=null;

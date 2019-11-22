@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class TestFileReader {//字符流输入,不存在字节流输入出现汉字乱码的情况
+public class TestFileReader {//字符流输入,不存在字节流输入出现汉字乱码的情况，将文件读取到程序中
     public static void main(String []args){
         FileReader fileReader=null;
         int c=0;

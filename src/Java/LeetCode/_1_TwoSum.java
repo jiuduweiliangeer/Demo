@@ -18,4 +18,4 @@ public class _1_TwoSum {
         }//通过hashmap中的contain方法来检测是否存在这个值，降低时间复杂度
         throw new IllegalArgumentException("no");
     }
-}
+}//时间复杂度为O(n)

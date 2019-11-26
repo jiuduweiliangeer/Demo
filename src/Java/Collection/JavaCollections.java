@@ -21,7 +21,7 @@ public class JavaCollections {
         for (int i=0;i<=9;i++){
             l2.add("b"+i);
         }
-        Collections.copy(l1,l2);//只有当两个List中的数据数量一致时，才能使用copy方法
+        Collections.addAll(l1,l2);//只有当两个List中的数据数量一致时，才能使用copy方法
         System.out.println(l1);
     }
 }

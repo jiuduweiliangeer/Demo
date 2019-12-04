@@ -1,5 +1,7 @@
 package Java.LeetCode;
-
+/*题目描述
+* 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。*/
+/*动态规划，中心扩散*/
 public class _5_CurrentlongestPalindrome {
     public String solutin(String s){
         if(s.length()<2){

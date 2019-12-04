@@ -38,7 +38,7 @@ public class _5_CurrentlongestPalindrome {
         if(s.indexOf(divide)!=-1){
             throw new IllegalArgumentException("传入参数错误");
         }
-        StringBuilder stringBuilder=new StringBuilder();
+        StringBuilder stringBuilder=new StringBuilder();//缓存方法，便于使用
         for (int i = 0; i <s.length() ; i++) {
             stringBuilder.append(divide);
             stringBuilder.append(s.charAt(i));

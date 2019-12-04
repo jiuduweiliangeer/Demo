@@ -26,7 +26,7 @@ public class _5_CurrentlongestPalindrome {
         int left=center-1;
         int right=center+1;
         int len=s.length();
-        while(left>=0&&right<len&&s.charAt(left)==s.charAt(right)){
+        while(left>=0&&right<len&&s.charAt(left)==s.charAt(right)){//&&的判定顺序得注意，否则容易造成边界不对而进入循环的问题
             left--;
             right++;
             steptemp++;

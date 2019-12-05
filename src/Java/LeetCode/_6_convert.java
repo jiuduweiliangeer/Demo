@@ -42,10 +42,10 @@ public class _6_convert {
         }else{
             for (int i = 0; i <numRow ; i++) {
                 temp.add(new StringBuilder());
-            }
+            }//向temp中加入numrow行字符串对象
             for (int i = 0,j=0;i <s.length();i++) {
                 if(flag==1){
-                    temp.get(j).append(s.charAt(i));
+                    temp.get(j).append(s.charAt(i));//先寻找当前需要的字符串对象位置，再向该字符串中传入数据。
                     j++;// 1 ,2, 3,4
                     if(j==numRow){
                         flag=-1;
@@ -63,8 +63,8 @@ public class _6_convert {
             String ans="";
             for (int i = 0; i <numRow ; i++) {
                 ans+=temp.get(i);
-            }
-            return ans.trim();
+            }//将字符串对象连接在一起
+            return ans.trim();//消除前后空格
         }
     }
 }

@@ -34,7 +34,7 @@ T     S     G
 public class _6_convert {
     public String convert(String s,int numRow){
         List<StringBuilder> temp= new ArrayList<StringBuilder>();
-        int flag=1;
+        int flag=1;//用flag来判定是正序还是倒序，在遍历数组的同时将数据放入另外一个数组
         if(numRow==1){
             return s;
         }else if(numRow==0){

@@ -54,11 +54,11 @@ public class _6_convert {
                 }else{
                     temp.get(j).append(s.charAt(i));//2,1,0
                     j--;// 1,0,-1
-                    if(j<0){
+                    if(j==0){
                         flag=1;
-                        j=1;
                     }
                 }
+
             }
             String ans="";
             for (int i = 0; i <numRow ; i++) {

@@ -54,11 +54,6 @@ public class _8_myatoi {
                 stringBuilder.append(temp.charAt(0));
                 for (int i = 1,j=1; i <temp.length(); i++) {
                     if ((int)temp.charAt(i)>=48&&(int)temp.charAt(i)<=57){
-/*                        if ((int)temp.charAt(i)==48&&(int)temp.charAt(i+1)==32){
-                            return 0;
-                        }else{
-                            stringBuilder.append(temp.charAt(i));
-                        }*/
                         stringBuilder.append(temp.charAt(i));
                         if (temp.charAt(0)=='+'||temp.charAt(0)=='-'){
                             if(temp.charAt(1)==' '){

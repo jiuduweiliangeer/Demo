@@ -120,4 +120,4 @@ public class _8_myatoi {
         }
     }
 }
-/*trim去头尾，按照asmii值和题目要求进行if判定*/
+/*trim去头尾，按照ascii值和题目要求进行if判定*/

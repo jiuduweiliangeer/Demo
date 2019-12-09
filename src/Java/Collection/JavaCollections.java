@@ -15,6 +15,7 @@ public class JavaCollections {
         System.out.println(l1);
         Collections.reverse(l1);
         System.out.println(l1);
+        l1.add("a5");
         Collections.sort(l1);
         System.out.println(l1);
         System.out.println(Collections.binarySearch(l1,"a5"));

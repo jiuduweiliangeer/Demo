@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="BaiduNetdiskDownload">
+    <CLASSES>
+      <root url="jar://G:/BaiduNetdiskDownload/activation.jar!/" />
+      <root url="jar://G:/BaiduNetdiskDownload/mail.jar!/" />
+      <root url="file://G:/BaiduNetdiskDownload" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://G:/BaiduNetdiskDownload" recursive="false" />
+  </library>
+</component>

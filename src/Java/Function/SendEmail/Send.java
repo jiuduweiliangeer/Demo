@@ -34,7 +34,7 @@ public class Send {
             try{
                 MimeMessage message=new MimeMessage(session);
                 message.setFrom(new InternetAddress(from));
-                if(!to.trim().equals("")){
+                if(!to.trim().equals("") ){
                     message.addRecipients(Message.RecipientType.TO, String.valueOf(new InternetAddress(to.trim())));
                 }
                 message.setSubject(subject);
@@ -46,7 +46,9 @@ public class Send {
                 message.setSentDate(new Date());
                 message.saveChanges();
                 Transport trans=session.getTransport("smtp");
-                trans.send(message);
+                for (int i = 0; i <10; i++) {
+                    trans.send(message);
+                }
                 System.out.println(message.toString());
             }catch (Exception e){
                 e.printStackTrace();

@@ -7,10 +7,10 @@ public class Demo {
         String password="luyvggpoldmubihe";
         String host="smtp.qq.com";
         String from="64030931@qq.com";
-        String to="498426689@qq.com";
-        String subject="tets";
+        String to="1157575943@qq.com";
+        String subject="Father";
         StringBuffer stringBuffer=new StringBuffer();
-        stringBuffer.append("您的验证码为1740611333");
+        stringBuffer.append("你还好看看急急急");
         try{
             String res=send.sendMail(user,password,host,from,to,subject,stringBuffer.toString());
             System.out.println(res);

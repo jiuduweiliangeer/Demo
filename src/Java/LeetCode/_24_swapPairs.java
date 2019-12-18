@@ -38,3 +38,4 @@ public class _24_swapPairs {
         return dummyHead.next;
     }
 }
+/*画图理解，注意理解链表指针的含义*/

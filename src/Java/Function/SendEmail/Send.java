@@ -6,7 +6,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import java.util.Date;
 import java.util.Properties;
-
+import java.lang.Thread;
 public class Send {
     /**
      *
@@ -46,9 +46,13 @@ public class Send {
                 message.setSentDate(new Date());
                 message.saveChanges();
                 Transport trans=session.getTransport("smtp");
-                for (int i = 0; i <10; i++) {
-                    trans.send(message);
+                for (int j = 0; j <2 ; j++) {
+                    for (int i = 0; i <50; i++) {
+                        trans.send(message);
+                    }
+                    Thread.sleep(120000);
                 }
+
                 System.out.println(message.toString());
             }catch (Exception e){
                 e.printStackTrace();
